@@ -1,7 +1,5 @@
 #!bin/bash
-sudo yum update -y
-sudo yum install git -y
-sudo yum install python-pip -y
+sudo yum update -y && sudo yum install git -y && sudo yum install python-pip -y
 git clone  https://github.com/hashicorp/terraform-aws-vault.git
 terraform-aws-vault/modules/install-vault/install-vault --version 0.10.0
 cd /home/ec2-user/terraform-aws-vault/modules/install-vault
