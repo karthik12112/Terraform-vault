@@ -1,6 +1,5 @@
 #!bin/bash
-sudo yum update
-sudo su -
+sudo yum update -y
 sudo yum install git -y
 sudo yum install python-pip -y
 git clone  https://github.com/hashicorp/terraform-aws-vault.git
